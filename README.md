@@ -13,15 +13,15 @@ then start the mongodb service
 for ws://
 edit server.py find ssl_options and remove it
 then find client/chat.html
-find ```js ws = new WebSocket("wss://anichat.ga:9000/serv");```
+find ```ws = new WebSocket("wss://anichat.ga:9000/serv");```
 and change it to ```js ws = new WebSocket("ws://localhost:9000/serv");```
 
 for wss://
 find client/chat.html
-find ```js ws = new WebSocket("wss://anichat.ga:9000/serv");```
-and change it to ```javascript ws = new WebSocket("wss://localhost:9000/serv");```
+find ```ws = new WebSocket("wss://anichat.ga:9000/serv");```
+and change it to ```ws = new WebSocket("wss://localhost:9000/serv");```
 then go to server.py
-find ```python ssl_ctx.load_cert_chain("certs/cert.pem","certs/privkey.pem")```
+find ```ssl_ctx.load_cert_chain("certs/cert.pem","certs/privkey.pem")```
 and change to your keys
 
 
@@ -31,9 +31,10 @@ python3 server.py
 ```
 # Issues
 join protocol doesn't send
+
 userlist protocol wont display all users unless sent again
-ban hasn't been added in client
-haven't hid certain buttons unless mod or owner
+
+ban / unban hasn't been added in client haven't hid certain buttons unless mod or owner
 
 # What Works
 
