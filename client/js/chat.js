@@ -22,7 +22,6 @@ $("#log-btn").on("click", function(){
         var s = JSON.stringify(m);
         ws.send(s);
         $(this).text("Login");
-        $(this).css("color", "green");
         $("#join-btn").hide();
         $("#userlist-btn").hide();
         $("#modlist-btn").hide();
@@ -138,6 +137,9 @@ $("#submit-register-btn").on("click", function(){
     }
     var s = JSON.stringify(m);
     ws.send(s);
+});
+$("#alert-x").on("click", function() {
+    $("#alert").hide();
 });
 function addMessage(user, uuid, mid, ts, message) {
     var element = document.createElement("div");
