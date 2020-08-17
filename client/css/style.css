@@ -1,0 +1,86 @@
+html {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.messagebox{
+    height: 75vh;
+    width: 99vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+.alert {
+    width: 99vw;
+    display: none;
+}
+.send-input{
+    width: 100%;
+    margin-top: 5px;
+}
+.message{
+    width: calc(100% - 20px);
+    height: 90px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    word-wrap: break-word;
+
+}
+#profileimg{
+    height:25px;
+    width: 25px;
+}
+#user, #text {
+    margin: 4px;
+}
+#time{
+    float: right;
+    font-size: 0.8em;
+    background-color: gray;
+    color: white;
+}
+.message {
+    overflow: hidden;
+}
+.message-delete-user, .message-ban, .message-delete {
+    float:right;
+    margin-top: 0px;
+    margin-right: 5px;
+    background-color: red;
+    padding-right: 3px;
+    padding-left: 3px;
+    color: white;
+    font-size: 0.8em;
+}
+.mod {
+    color: #83963c;
+}
+.ul {
+    margin: 5px;
+}
+.message-delete-user:hover, .message-ban:hover, .message-delete:hover {
+    background-color: black;
+    color: white;
+}
+.box-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+}
+.x{
+    color: white;
+    background-color: red;
+    float: right;
+    margin: 0.3rem;
+    padding: 0.1rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+
+}
+.x:hover{
+    background-color: black;
+    color: white;
+}
