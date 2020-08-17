@@ -14,7 +14,7 @@ for ws://
 edit server.py find ssl_options and remove it
 then find client/chat.html
 find ```ws = new WebSocket("wss://anichat.ga:9000/serv");```
-and change it to ```js ws = new WebSocket("ws://localhost:9000/serv");```
+and change it to ```ws = new WebSocket("ws://localhost:9000/serv");```
 
 for wss://
 find client/chat.html
