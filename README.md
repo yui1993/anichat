@@ -34,7 +34,9 @@ join protocol doesn't send
 
 userlist protocol wont display all users unless sent again
 
-ban / unban hasn't been added in client haven't hid certain buttons unless mod or owner
+ban / unban hasn't been added in client
+
+haven't hid certain buttons unless mod or owner
 
 # What Works
 
